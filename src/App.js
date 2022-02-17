@@ -5,12 +5,13 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
+import CardMedia from "@mui/material/CardMedia";
 
 const App = () => {
   return (
     <div>
 
-<Box sx={{width:300}}>
+{/* <Box sx={{width:300}}>
       <Card sx={{m:2}}>
           <CardContent>
             <Typography sx={{ fontSize: 28 }} color="text.secondary" gutterBottom>
@@ -29,17 +30,31 @@ const App = () => {
           </CardContent>
 
           <CardActions>
-          {/* //Boton fantasma - menos importante */}
+        
             <Button>Hola</Button> 
-            {/* Boton secundario  */}
             <Button variant="outlined">Hola</Button>
-            {/* Boton primario */}
             <Button variant="contained">Hola</Button>
           </CardActions>
+            
       </Card>
           
+</Box> */}
 
+<Box sx={{width:300}}>
 
+  <Card>
+   <CardMedia
+        component="img"
+        height="140"
+        image="http://www.placekitten.com/200"
+        alt="green iguana"
+      />
+    <CardContent>Hola</CardContent>
+    <CardActions>
+      <Button>Hola</Button>
+    </CardActions>
+
+  </Card>
 </Box>
     </div>
   )
