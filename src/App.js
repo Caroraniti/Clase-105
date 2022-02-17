@@ -10,29 +10,37 @@ const App = () => {
   return (
     <div>
 
+<Box sx={{width:300}}>
       <Card sx={{m:2}}>
           <CardContent>
             <Typography sx={{ fontSize: 28 }} color="text.secondary" gutterBottom>
-              Word of the Day
+              Carolina Raniti
             </Typography>
             <Typography variant="h5" component="div">
-              be nev o lent
+              Frontend Developer
             </Typography>
             <Typography sx={{ mb: 1.5 }} color="text.secondary">
-              adjective
+              29 años
             </Typography>
             <Typography variant="body2">
               well meaning and kindly.
-         
-          {'"a benevolent smile"'}
+            {'"a benevolent smile"'}
             </Typography>
           </CardContent>
 
           <CardActions>
-            Acciones
+          {/* //Boton fantasma - menos importante */}
+            <Button>Hola</Button> 
+            {/* Boton secundario  */}
+            <Button variant="outlined">Hola</Button>
+            {/* Boton primario */}
+            <Button variant="contained">Hola</Button>
           </CardActions>
       </Card>
-      
+          
+
+
+</Box>
     </div>
   )
 }
